@@ -17,18 +17,10 @@
         echo json_encode($res);
     } 
 
-    $file = fopen("./log.txt", "a");
-    $req = "pozadiavka prijata\n";
-    $data = http_build_query($_POST) . "\n";
-    fwrite($file, $req);
-    fwrite($file, $data);
-    fclose($file);
+ 
 
     if(isset($_POST['get_pref']) && $_POST['get_pref']){
-        $file = fopen("./log.txt", "a");
         $req = $_POST['get_pref'] . " " . $_POST['card_id'] . ".\n";
-        fwrite($file, $req);
-        fclose($file);
         $res = $db->get_preferences(($_POST['card_id']));
         echo json_encode($res);
     }

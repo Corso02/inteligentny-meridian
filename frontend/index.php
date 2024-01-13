@@ -6,6 +6,7 @@
     <title>Ovládanie Meridian</title>
     <link rel="stylesheet" href="style/common_styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>

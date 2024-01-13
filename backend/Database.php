@@ -44,5 +44,9 @@
             }
             return array("success"=>true, "min_temp"=>$data[0], "max_temp"=>$data[1], "min_light"=>$data[2]);
         }
+
+        function close_conn(){
+            $this->close();
+        }
     }
 ?>
